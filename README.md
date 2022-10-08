@@ -13,4 +13,4 @@ This project operates entirely in a .NET console app, and should eventuate into 
 
 ## Axel Sprites
 The current vision for MRPG 2.0 is for it to be a Pokemon-like reinterpretation of the mechanics featured in the old, text-based RPG. As such, the rendering engine needs to handle things like player collision, position of pixels, etc., thus a simple ASCII editor can't really do what we need. This editor is designed to save to .AXL files, which will be used to render objects within the RPG (if and when it eventuates).
-If someone were so inclined, it could also be repurposed to developer Axel sprites for other programs as well.
+If someone were so inclined, it could also be repurposed to develop Axel sprites for other programs as well.
