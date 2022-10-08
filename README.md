@@ -12,5 +12,5 @@ As using the name ASSCRAX might imply, this project is made entirely as a fun ex
 This project operates entirely in a .NET console app, and should eventuate into a full 2D rendering engine using ASCII instead of pixels. This editor provides the groundwork required for the rendering engine for the full game, while providing a graphical way to generate Axel sprites.
 
 ## Axel Sprites
-The current vision for MRPG 2.0 is for it to be a Pokemon-like reinterpretation of the mechanics featured in the old, text-based RPG. As such, the rendering engine needs to handle things like player collision, position of pixels, etc., thus a simple ASCII editor can't really do what we need. This editor is designed to save to .AXL files, which will be used to render objects within the RPG (if and when it eventuates).
+The current vision for MRPG 2.0 is for it to be a Pokemon-like reinterpretation of the mechanics featured in the old, text-based RPG. As such, the rendering engine needs to handle things like player collision, position of pixels, etc., thus a simple ASCII editor can't really do what we need. This editor is designed to save to `.AXL` files, which will be used to render objects within the RPG (if and when it eventuates).
 If someone were so inclined, it could also be repurposed to develop Axel sprites for other programs as well.
