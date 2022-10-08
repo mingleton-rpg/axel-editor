@@ -1,0 +1,15 @@
+C:\Users\Big Nuts\Documents\mingleton rpg v2\axel editor\bin\Debug\net6.0\axel editor.exe
+C:\Users\Big Nuts\Documents\mingleton rpg v2\axel editor\bin\Debug\net6.0\axel editor.deps.json
+C:\Users\Big Nuts\Documents\mingleton rpg v2\axel editor\bin\Debug\net6.0\axel editor.runtimeconfig.json
+C:\Users\Big Nuts\Documents\mingleton rpg v2\axel editor\bin\Debug\net6.0\axel editor.dll
+C:\Users\Big Nuts\Documents\mingleton rpg v2\axel editor\bin\Debug\net6.0\axel editor.pdb
+C:\Users\Big Nuts\Documents\mingleton rpg v2\axel editor\obj\Debug\net6.0\axel editor.csproj.AssemblyReference.cache
+C:\Users\Big Nuts\Documents\mingleton rpg v2\axel editor\obj\Debug\net6.0\axel editor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Big Nuts\Documents\mingleton rpg v2\axel editor\obj\Debug\net6.0\axel editor.AssemblyInfoInputs.cache
+C:\Users\Big Nuts\Documents\mingleton rpg v2\axel editor\obj\Debug\net6.0\axel editor.AssemblyInfo.cs
+C:\Users\Big Nuts\Documents\mingleton rpg v2\axel editor\obj\Debug\net6.0\axel editor.csproj.CoreCompileInputs.cache
+C:\Users\Big Nuts\Documents\mingleton rpg v2\axel editor\obj\Debug\net6.0\axel editor.dll
+C:\Users\Big Nuts\Documents\mingleton rpg v2\axel editor\obj\Debug\net6.0\refint\axel editor.dll
+C:\Users\Big Nuts\Documents\mingleton rpg v2\axel editor\obj\Debug\net6.0\axel editor.pdb
+C:\Users\Big Nuts\Documents\mingleton rpg v2\axel editor\obj\Debug\net6.0\axel editor.genruntimeconfig.cache
+C:\Users\Big Nuts\Documents\mingleton rpg v2\axel editor\obj\Debug\net6.0\ref\axel editor.dll
