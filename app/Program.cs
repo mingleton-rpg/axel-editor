@@ -1,5 +1,4 @@
-﻿using Renderable;
-using Renderable.Primitives;
+﻿using Engine;
 
 namespace App { 
     class Program { 
@@ -9,12 +8,12 @@ namespace App {
             VIEWPORT_HEIGHT = 40;
 
         static void Main() { 
-            // Initialise the window
+            // [ ENGINE ] Initialise the window
             Renderer renderer = new Renderer(WINDOW_WIDTH, WINDOW_HEIGHT, null);
             renderer.Init();
 
-            // Create a new canvas for our viewport
-            Canvas viewport = new Canvas(WINDOW_WIDTH, VIEWPORT_HEIGHT, renderer);
+            // [ APP ] Initialise viewport
+            Viewport viewport = new Viewport(WINDOW_WIDTH, VIEWPORT_HEIGHT, renderer);
             
             // Start a thread for our render input
             Thread thr1 = new Thread(renderer.RenderLoop);

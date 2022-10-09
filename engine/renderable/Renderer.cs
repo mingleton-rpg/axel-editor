@@ -1,7 +1,7 @@
-using Renderable;
+using Engine.Renderable;
 
-namespace App { 
-    public class Renderer { 
+namespace Engine { 
+    public class Renderer : IRenderable, IRenderer { 
         const char BLANK = ' ';
 
         public Renderer(
@@ -42,13 +42,23 @@ namespace App {
             RenderQueue.Remove(ren);
         }
 
-        private List<Axel> CompileRenderables() { 
+        public List<Axel> CompileRenderables() { 
             List<Axel> axelList = new List<Axel>();
 
             foreach (IRenderable ren in RenderQueue) { 
                 axelList.AddRange(ren.Render());
             }
             return axelList;
+        }
+
+        public List<Axel> Render() { 
+            // Compile all renderables
+            List<Axel> axelQueue = CompileRenderables();
+
+            // Sorts the list according to Axel sorting rules
+            axelQueue.Sort(); 
+
+            return axelQueue;
         }
 
         private void ColorRender() { 
@@ -78,11 +88,7 @@ namespace App {
 
         // Renders instantaneously, but loses colors
         private void InstantRender() { 
-            // Compile all renderables
-            List<Axel> axelQueue = CompileRenderables();
-
-            // Sorts the list from 0,0 to WINDOW_WIDTH, WINDOW_HEIGHT, ready for rendering
-            axelQueue.Sort();      
+            List<Axel> axelQueue = Render();    
 
             string renderString = "\r";
 
