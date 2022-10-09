@@ -26,16 +26,20 @@ namespace Engine {
             public Align TextAlign { get; }
             public ConsoleColor Color { get; }
 
-            public List<Axel> Render() { 
+            public virtual List<Axel> Render() { 
+                return Render(Content);
+            }
+
+            public virtual List<Axel> Render(string text) { 
                 List<Axel> axelList = new List<Axel>();
 
                 int offset = 0;
-                if (TextAlign == Align.Right) offset = 0 - Content.Length;
-                else if (TextAlign == Align.Center) offset = 0 - (Content.Length / 2);
+                if (TextAlign == Align.Right) offset = 0 - text.Length;
+                else if (TextAlign == Align.Center) offset = 0 - (text.Length / 2);
 
                 for (
                     int i = 0;
-                    i < Content.Length;
+                    i < text.Length;
                     i++
                 ) { 
                     axelList.Add(new Axel(
@@ -44,7 +48,7 @@ namespace Engine {
                             StartPos.Y,
                             StartPos.Z
                         ),
-                        Content[i],
+                        text[i],
                         Color
                     ));
                 }

@@ -4,10 +4,12 @@ namespace Engine {
     namespace Renderable { 
         public class Canvas: IRenderable, IRenderer { 
             public Canvas(
+                Coord startPos,
                 int width,
                 int height,
                 Renderer renderer
             ) { 
+                StartPos = startPos;
                 Width = width;
                 Height = height;
                 Renderer = renderer;
@@ -17,6 +19,7 @@ namespace Engine {
                 renderer.AddRenderable(this);
             }
 
+            public Coord StartPos { get; }
             public int Width { get; }
             public int Height { get; }
             public List<IRenderable> Children;
@@ -38,25 +41,25 @@ namespace Engine {
 
                 // Show outline (will be optional)
                 axelList.AddRange(new HorizontalLine(
-                    new Coord(0, 0, 999),
+                    new Coord(StartPos.X, StartPos.Y, StartPos.Z),
                     Width,
                     true,
                     ConsoleColor.DarkGray
                 ).Render());
                 axelList.AddRange(new HorizontalLine(
-                    new Coord(0, Height, 999),
+                    new Coord(StartPos.X, StartPos.Y + Height, StartPos.Z),
                     Width,
                     true,
                     ConsoleColor.DarkGray
                 ).Render());
                 axelList.AddRange(new VerticalLine(
-                    new Coord(0, 1, 999),
+                    new Coord(StartPos.X, StartPos.Y + 1, StartPos.Z),
                     Height,
                     false,
                     ConsoleColor.DarkGray
                 ).Render());
                 axelList.AddRange(new VerticalLine(
-                    new Coord(Width - 1, 1, 999),
+                    new Coord(StartPos.X + Width - 1, StartPos.Y + 1, StartPos.Z),
                     Height,
                     false,
                     ConsoleColor.DarkGray

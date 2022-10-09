@@ -4,12 +4,15 @@ using Engine.Renderable.Primitives;
 using App.Renderable;
 
 namespace App { 
-    public class Viewport : Canvas { 
+    public class Viewport : Canvas {
+
         public Viewport ( 
+            Coord startPos,
             int width,
             int height,
             Renderer renderer
         ) : base ( 
+            startPos,
             width,
             height, 
             renderer
